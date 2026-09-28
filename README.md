@@ -2,7 +2,7 @@
 
 Protótipo estático para explorar planejamento de pessoas, projetos, alocações, restrições e indicadores de capacidade. A base contém somente registros sintéticos, identificados por `DEMO` e endereços `example.com`.
 
-![Visão do painel do Capacity Planner com dados fictícios](assets/brand/preview-dashboard.png)
+![Visão do painel do Capacity Planner com dados fictícios](assets/brand/preview-dashboard.jpg)
 
 ## Acessar a demonstração
 
