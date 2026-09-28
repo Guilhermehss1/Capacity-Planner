@@ -1,0 +1,115 @@
+* { box-sizing: border-box; }
+
+    html {
+      background: var(--bg-canvas);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.43;
+    }
+
+body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg-canvas);
+    }
+
+button, input, select, textarea {
+      font: inherit;
+    }
+
+button {
+      cursor: pointer;
+    }
+
+button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--brand-primary);
+      outline-offset: 2px;
+    }
+
+.hidden { display: none !important; }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      flex: none;
+    }
+
+.icon-sm {
+      width: 15px;
+      height: 15px;
+    }
+
+.nav-button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      color: var(--text-secondary);
+      background: transparent;
+      border: 0;
+      border-left: 3px solid transparent;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      text-align: left;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+.nav-button:hover {
+      background: var(--bg-elevated);
+      color: var(--brand-primary);
+    }
+
+.nav-button.active {
+      border-left-color: var(--brand-accent);
+      color: var(--brand-primary);
+      background: var(--bg-elevated);
+    }
+
+.input,
+    .select,
+    .textarea {
+      height: 36px;
+      min-width: 150px;
+      padding: 0 10px;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      font-size: 13px;
+    }
+
+.textarea {
+      height: 72px;
+      padding-top: 9px;
+      resize: vertical;
+    }
+
+.input:focus,
+    .select:focus,
+    .textarea:focus {
+      border-color: var(--brand-accent);
+      box-shadow: 0 0 0 3px rgba(214,58,154,.14);
+      outline: none;
+    }
+
+tbody tr:hover {
+      background: #FAF7FD;
+    }
+
+.drawer-body {
+      padding: 18px;
+      overflow: auto;
+      display: grid;
+      gap: 14px;
+    }

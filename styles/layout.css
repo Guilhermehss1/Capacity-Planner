@@ -1,0 +1,243 @@
+.login-screen {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(420px, 520px) 1fr;
+      background: var(--bg-canvas);
+    }
+
+.icon-sprite {
+      position: absolute;
+    }
+
+.login-brand {
+      background: var(--brand-deep);
+      color: #fff;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+.login-brand::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -120px auto;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 91, 157, .34);
+      border-radius: 50%;
+      filter: blur(18px);
+    }
+
+.brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+.logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: inline-grid;
+      place-items: center;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.18);
+    }
+
+.brand-mark {
+      width: 86%;
+      height: 86%;
+      display: block;
+      object-fit: contain;
+    }
+
+.brand-title {
+      display: grid;
+      gap: 1px;
+    }
+
+.brand-title strong {
+      font-size: 19px;
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+    }
+
+.brand-title span {
+      color: rgba(255,255,255,.74);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+.login-copy {
+      max-width: 410px;
+      position: relative;
+      z-index: 1;
+    }
+
+.login-copy h1 {
+      margin: 0 0 16px;
+      font-size: 38px;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+.login-copy p {
+      margin: 0;
+      color: rgba(255,255,255,.78);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+.login-panel {
+      display: grid;
+      place-items: center;
+      padding: 48px;
+    }
+
+.login-card {
+      width: min(460px, 100%);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-modal);
+      padding: 28px;
+    }
+
+.login-card h2 {
+      margin: 0 0 4px;
+      color: var(--brand-primary);
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+.login-card p {
+      margin: 0 0 24px;
+      color: var(--text-secondary);
+    }
+
+.login-password-field {
+      margin-top: 12px;
+    }
+
+.login-submit {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+.app-shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: var(--sidebar) 1fr;
+      grid-template-rows: var(--topbar) 1fr;
+      grid-template-areas:
+        "topbar topbar"
+        "sidebar main";
+    }
+
+.topbar {
+      grid-area: topbar;
+      background: var(--brand-deep);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+.topbar-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+    }
+
+.topbar-brand-title {
+      font-size: 16px;
+    }
+
+.topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+.profile-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,.86);
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius-full);
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+.sidebar {
+      grid-area: sidebar;
+      background: var(--bg-surface);
+      border-right: 1px solid var(--border-soft);
+      padding: 16px 12px;
+      position: sticky;
+      top: var(--topbar);
+      height: calc(100vh - var(--topbar));
+      overflow: auto;
+    }
+
+.nav-group {
+      display: grid;
+      gap: 4px;
+    }
+
+.main {
+      grid-area: main;
+      padding: 24px;
+      min-width: 0;
+    }
+
+.page {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      gap: 20px;
+    }
+
+.page-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+.page-title {
+      display: grid;
+      gap: 4px;
+    }
+
+.page-title h1 {
+      margin: 0;
+      color: var(--brand-primary);
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.01em;
+    }
+
+.page-title p {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+.mobile-note {
+      display: none;
+    }
